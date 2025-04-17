@@ -1,5 +1,5 @@
 
-# 📊 SmartAlpha: Machine Learning-Driven Stock Selection & Portfolio Optimization
+# 📊 Machine Learning-Driven Stock Selection & Portfolio Optimization
 
 SmartAlpha is an end-to-end quantitative equity strategy framework that leverages both traditional financial statement analysis and modern machine learning techniques. It integrates long-term fundamentals with short-term price movements and news sentiment to evaluate stock quality and construct a dynamic, risk-adjusted portfolio.
 
