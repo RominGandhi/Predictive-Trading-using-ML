@@ -3,8 +3,7 @@
 
 A cutting-edge Streamlit application that forecasts short-term stock returns using Gradient Boosting and LSTM models. By integrating financial fundamentals, sentiment analysis, and technical indicators, this dashboard provides insightful predictions to aid in trading strategies.
 
-![Dashboard Overview](images/dashboard_overview.png)
-
+![Dashboard Overview](images/ForecastExample.png)
 ---
 
 ## 🧠 Features
