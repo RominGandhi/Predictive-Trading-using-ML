@@ -21,15 +21,15 @@ A cutting-edge Streamlit application that forecasts short-term stock returns usi
 
 ### 1. Dashboard Overview
 
-![Dashboard Overview](images/dashboard_overview.png)
+![Dashboard Overview](images/ForecastExample.png)
 
 ### 2. Model Performance Comparison
 
-![Model Performance](images/model_performance.png)
+![Model Performance](images/ModelPerformanceExample.png)
 
 ### 3. Forecast Visualizations
 
-![Forecast Visualizations](images/forecast_visualizations.png)
+![Forecast Visualizations](images/ForecastGraphExample.png)
 
 ---
 
