@@ -1,97 +1,103 @@
 
-# 📊 Machine Learning-Driven Stock Selection & Portfolio Optimization
+# 📈 Predictive Trading Strategy Dashboard
 
-SmartAlpha is an end-to-end quantitative equity strategy framework that leverages both traditional financial statement analysis and modern machine learning techniques. It integrates long-term fundamentals with short-term price movements and news sentiment to evaluate stock quality and construct a dynamic, risk-adjusted portfolio.
+A cutting-edge Streamlit application that forecasts short-term stock returns using Gradient Boosting and LSTM models. By integrating financial fundamentals, sentiment analysis, and technical indicators, this dashboard provides insightful predictions to aid in trading strategies.
 
----
-
-## 🔧 Technical Stack
-
-- **Languages**: Python  
-- **Libraries**: `Pandas`, `NumPy`, `scikit-learn`, `XGBoost`, `yfinance`, `requests`, `transformers`, `NLTK` (VADER)  
-- **APIs**:
-  - [Yahoo Finance](https://finance.yahoo.com/) (historical market data)
-  - [Financial Modeling Prep (FMP)](https://site.financialmodelingprep.com/) (fundamentals, financial statements)
-  - [Finnhub](https://finnhub.io/) (news and headlines for sentiment)
+![Dashboard Overview](images/dashboard_overview.png)
 
 ---
 
-## 💡 Project Objectives
+## 🧠 Features
 
-1. **Stock Evaluation Engine**
-   - Ingests 5 years of **income statement**, **balance sheet**, and **cash flow** data
-   - Trains a **classification model** to determine whether a stock is fundamentally strong and worth buying
-
-2. **Short-Term Signal Modeling**
-   - Extracts **technical indicators**, **returns**, and **volatility metrics**
-   - Uses **NLP sentiment analysis** (VADER, FinBERT) on company news headlines
-   - Applies **XGBoost classifiers** to predict short-term price direction (5–30 day horizon)
-
-3. **Portfolio Optimization**
-   - Constructs a **risk-adjusted portfolio** using confidence-weighted allocations
-   - Simulates portfolio returns across multiple holding periods (5, 20, 40, 60 days)
-   - Calculates **Sharpe Ratio**, volatility, and expected return
+- **Multi-Horizon Forecasting**: Predict stock returns over 30, 60, 90, and 120-day periods.
+- **Model Comparison**: Evaluate predictions from both Gradient Boosting and LSTM models.
+- **Monte Carlo Simulations**: Incorporate uncertainty by running multiple simulations for each prediction.
+- **Interactive Visualizations**: Explore forecasts and historical data through dynamic charts.
+- **User Input**: Customize predictions by entering specific stock tickers and news events.
 
 ---
 
-## 📁 Key Components
+## 🖼️ UI Snapshots
 
-- `data/`: Stores historical JSON data, fundamentals, and sentiment  
-- `train_fundamentals_model.py`: Trains model on 5Y financial statements to classify "Buy" vs "Avoid"  
-- `sentiment_analysis.py`: Collects and scores news headlines via VADER/FinBERT  
-- `portfolio_allocator.py`: Builds 60/40 or dynamic allocation portfolios and simulates performance  
-- `fmp_fundamentals.py`: Extracts ratios and valuation data from FMP API  
-- `stock_labels.csv`: Custom labels for training ML models on fundamentals
+### 1. Dashboard Overview
 
----
+![Dashboard Overview](images/dashboard_overview.png)
 
-## 🔍 Sample Features Used
+### 2. Model Performance Comparison
 
-**From Fundamentals:**
-- Revenue growth, EBITDA margin, Net margin
-- Free Cash Flow (FCF) average & growth
-- Debt-to-equity, Current ratio
+![Model Performance](images/model_performance.png)
 
-**From Price/Sentiment:**
-- Lagged returns, Volatility, Momentum
-- Sentiment scores from VADER and FinBERT
-- Moving averages, Signal confidence
+### 3. Forecast Visualizations
+
+![Forecast Visualizations](images/forecast_visualizations.png)
 
 ---
 
-## 🧠 ML Models Used
+## ⚙️ Installation
 
-- **RandomForestClassifier** for long-term value classification  
-- **XGBoostClassifier** for short-term directional predictions  
-- Feature scaling with `StandardScaler`  
-- Feature importance visualizations
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/yourusername/predictive-trading-dashboard.git
+   cd predictive-trading-dashboard
+   ```
+
+2. **Create a Virtual Environment**:
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install Dependencies**:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run the Application**:
+
+   ```bash
+   streamlit run app.py
+   ```
 
 ---
 
-## 📈 Results & Metrics
+## 📝 Usage
 
-- High signal accuracy on fundamental classification (AUC ≥ 0.85 on test set)
-- Portfolio Sharpe Ratios: Up to **6.5+** depending on asset mix and prediction strength
-- Configurable horizon testing: 5D, 20D, 40D, 60D
+1. **Enter Stock Ticker**: Input the desired stock symbol (e.g., AAPL).
+2. **Set Date Range**: Specify the start and end dates for historical data analysis.
+3. **Input News Events**: Add any relevant news events that might impact stock performance.
+4. **Configure Simulations**: Adjust the number of Monte Carlo simulations and random seed as needed.
+5. **Fetch Data**: Click the "Fetch Data" button to retrieve and process all necessary information.
+6. **View Predictions**: Explore the forecasted returns and model performance metrics.
 
 ---
 
-## 🚀 Getting Started
+## 📊 Model Improvement Suggestions
 
-```bash
-# Clone the repo
-git clone https://github.com/yourusername/SmartAlpha.git
-cd SmartAlpha
+- **Incorporate Additional Data Sources**: Integrate macroeconomic indicators or alternative data to enhance model accuracy.
+- **Hyperparameter Tuning**: Employ techniques like Grid Search or Bayesian Optimization for optimal model parameters.
+- **Feature Engineering**: Develop new features that capture market anomalies or investor sentiment more effectively.
+- **Model Ensemble**: Combine predictions from multiple models to improve robustness.
+- **Regular Updates**: Continuously update the models with new data to maintain prediction relevance.
 
-# Install dependencies
-pip install -r requirements.txt
+---
 
-# Run data collection
-python download_historical_data.py
-python fmp_fundamentals.py
+## ⚠️ Disclaimer
 
-# Train model
-python train_fundamentals_model.py
+This dashboard is intended for educational and experimental purposes only. The forecasts and outputs generated are based on historical data, machine learning models, and simulated results. They should not be interpreted as financial advice or recommendations for trading. Please consult with a qualified financial advisor before making any investment decisions.
 
-# Build a portfolio
-python portfolio_allocator.py
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙌 Acknowledgements
+
+- [Streamlit](https://streamlit.io/) for the interactive web framework.
+- [scikit-learn](https://scikit-learn.org/) and [PyTorch](https://pytorch.org/) for machine learning libraries.
+- [Altair](https://altair-viz.github.io/) for data visualization.
