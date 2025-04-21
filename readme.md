@@ -37,8 +37,8 @@ A cutting-edge Streamlit application that forecasts short-term stock returns usi
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/yourusername/predictive-trading-dashboard.git
-   cd predictive-trading-dashboard
+   git clone https://github.com/RominGandhi/Predictive-Trading-using-ML.git
+   cd Predictive-Trading-using-ML
    ```
 
 2. **Create a Virtual Environment**:
