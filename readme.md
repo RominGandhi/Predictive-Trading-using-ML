@@ -89,12 +89,6 @@ This dashboard is intended for educational and experimental purposes only. The f
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
 ## 🙌 Acknowledgements
 
 - [Streamlit](https://streamlit.io/) for the interactive web framework.
