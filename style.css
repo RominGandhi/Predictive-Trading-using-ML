@@ -1,0 +1,154 @@
+/* Main background */
+[data-testid="stAppViewContainer"] {
+    background-color: #000000; /* Dark background */
+    color: #f0f0f0;
+}
+
+/* Sidebar background */
+[data-testid="stSidebar"] {
+    background-color: #f1f1f1 !important;  /* Light grey sidebar */
+    color: #000000 !important;
+}
+
+/* Sidebar text */
+[data-testid="stSidebar"] * {
+    color: #000000 !important;
+}
+
+/* Headers and text */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff !important;
+}
+
+p, label, span, div {
+    color: #dddddd !important;
+}
+
+/* Buttons */
+button[kind="primary"], .stDownloadButton button {
+    background-color: #444 !important;
+    color: white !important;
+    border: 1px solid #888 !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 5px;
+}
+
+button[kind="primary"]:hover, .stDownloadButton button:hover {
+    background-color: #666 !important;
+    border-color: #aaa !important;
+}
+
+/* Checkbox label */
+.css-16huue1 {
+    color: #000 !important;
+}
+
+/* Slider label */
+.stSlider > div > div {
+    color: #000 !important;
+}
+
+/* Fix selectbox inside light sidebar */
+.css-1cpxqw2, .css-1d391kg {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #ccc !important;
+    border-radius: 6px !important;
+}
+
+/* Dropdown text (inside options list) */
+.css-1n76uvr {
+    color: #ffffff !important;
+}
+
+/* Selected text */
+.css-1n76uvr > div {
+    color: #000 !important;
+}
+/* --- Input and Dropdown Styling --- */
+input[type="text"] {
+    background-color: #1e1e1e !important;
+    color: #fafafa !important;
+    border: 1px solid #444 !important;
+    border-radius: 8px !important;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #888 !important;
+    outline: none !important;
+    box-shadow: 0 0 5px #666 !important;
+}
+
+/* Dropdown suggestion box */
+div[data-baseweb="popover"] {
+    background-color: #ffffff !important;
+    color: #fafafa !important;
+    border: 1px solid #ffffff !important;
+    border-radius: 8px !important;
+}
+
+div[data-baseweb="option"] {
+    background-color: #000000 !important;
+    color: #fafafa !important;
+}
+
+div[data-baseweb="option"]:hover {
+    background-color: #ffffff !important;
+}
+
+/* --- Model Summary Card --- */
+.model-summary {
+    background-color: #616265;
+    color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.model-summary h4 {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.model-summary p {
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.model-summary p strong {
+    color: #f5f5f5;
+}
+
+.monte-carlo-box {
+    background-color: #616265;
+    color: #f5f5f5;
+    padding: 18px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+/* Fetch button wrapper spacing */
+.fetch-button-wrapper {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Fetch button styling */
+div.stButton > button:first-child {
+    background-color: #8b8c8f;
+    color: white;
+    border: 1px solid #ffffff;
+    padding: 0.55rem 1.2rem;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
