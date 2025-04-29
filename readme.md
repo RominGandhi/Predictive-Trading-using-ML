@@ -73,16 +73,6 @@ A cutting-edge Streamlit application that forecasts short-term stock returns usi
 
 ---
 
-## 📊 Model Improvement Suggestions
-
-- **Incorporate Additional Data Sources**: Integrate macroeconomic indicators or alternative data to enhance model accuracy.
-- **Hyperparameter Tuning**: Employ techniques like Grid Search or Bayesian Optimization for optimal model parameters.
-- **Feature Engineering**: Develop new features that capture market anomalies or investor sentiment more effectively.
-- **Model Ensemble**: Combine predictions from multiple models to improve robustness.
-- **Regular Updates**: Continuously update the models with new data to maintain prediction relevance.
-
----
-
 ## ⚠️ Disclaimer
 
 This dashboard is intended for educational and experimental purposes only. The forecasts and outputs generated are based on historical data, machine learning models, and simulated results. They should not be interpreted as financial advice or recommendations for trading. Please consult with a qualified financial advisor before making any investment decisions.
